@@ -16,17 +16,31 @@
 
 - iOS XCode (ionic setup instructions [here](https://ionicframework.com/docs/installation/ios)). Requires a mac, but don't got one yet
 
-## RUN LOCALLY
+## RUNNING APPLICATION
+
+###  ON LOCAL BROWSER
+
+*NOTE* BLE Scan not supported - use emulator
 
 In console, navigate to `/mobile-app/iconic/juicetank` and run `ng serve` 
 
 Application will be available in your local browser at [http://localhost:8100](http://localhost:8100) 
 
-### RUN ON ANDROID
+### ANDROID - EMULATED
 
-In console, navigate to `/mobile-app/iconic/juicetank`
+ionic [documentation](https://ionicframework.com/docs/cli/commands/cordova-emulate)
 
-To run on a USB connected Android device, run `ionic cordova run android`
+In console, navigate to `/mobile-app/iconic/juicetank`and run `ionic cordova emulate android`
+
+### ANDROID - USB CONNECTED
+
+Ensure Android connected, and USB Logging enabled
+
+In console, navigate to `/mobile-app/iconic/juicetank`and run `ionic cordova run android`
+
+### iOS
+
+_Not Yet Supported_
 
 ## ISSUES
 
@@ -60,12 +74,11 @@ Deploying to USB Connected Android
 
 ### Ionic BLE
 
-Nice YouTube [tutorial](https://www.youtube.com/watch?v=ZZOauPBUhSs)
-
 Ionic BLE [documentation](https://ionicframework.com/docs/native/ble) and [usage](https://github.com/don/cordova-plugin-ble-central)
 
+Nice short YouTube [tutorial](https://www.youtube.com/watch?v=ZZOauPBUhSs)
 
-from application root `mobile-app/ionci/juictank`, run:
+from application root `mobile-app/ionic/juictank`, run:
 ```
 ionic cordova plugin add cordova-plugin-ble-central
 npm install @ionic-native/ble
