@@ -22,6 +22,12 @@ In console, navigate to `/mobile-app/iconic/juicetank` and run `ng serve`
 
 Application will be available in your local browser at [http://localhost:8100](http://localhost:8100) 
 
+### RUN ON ANDROID
+
+In console, navigate to `/mobile-app/iconic/juicetank`
+
+To run on a USB connected Android device, run `ionic cordova run android`
+
 ## ISSUES
 
 ### Android
@@ -52,6 +58,20 @@ Deploying to USB Connected Android
 
 ## Application Specific Details
 
+### Ionic BLE
+
+Nice YouTube [tutorial](https://www.youtube.com/watch?v=ZZOauPBUhSs)
+
+Ionic BLE [documentation](https://ionicframework.com/docs/native/ble) and [usage](https://github.com/don/cordova-plugin-ble-central)
+
+
+from application root `mobile-app/ionci/juictank`, run:
+```
+ionic cordova plugin add cordova-plugin-ble-central
+npm install @ionic-native/ble
+```
+
+### Bootstrap Styling 
 - Adding bootstrap styling to application
     * Install locally to mobile-app/ionic/juicetank `npm install --save bootstrap@3`
     * Append the following to angular.json section...

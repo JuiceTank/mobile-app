@@ -1,5 +1,7 @@
 {
   "name": "juicetank",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

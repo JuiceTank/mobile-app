@@ -4,20 +4,29 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      List
+      Scan
     </ion-title>
+    <ion-button (click)="Scan()" slot="end">
+      <ion-icon name="Bluetooth"></ion-icon>
+      <p>Scan</p>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let item of items">
+    <ion-card-content *ngFor="let device of devices">
+      <p>{{ device.name || 'Unnamed'}}</p>
+      <p>{{ device.id}}</p>
+      <p>RSSI: {{ device.rssi}}</p>
+    </ion-card-content>
+    <!--<ion-item *ngFor="let item of items">
       <ion-icon [name]="item.icon" slot="start"></ion-icon>
       {{item.title}}
       <div class="item-note" slot="end">
         {{item.note}}
       </div>
-    </ion-item>
+    </ion-item>-->
   </ion-list>
   <!--
     <div *ngIf="selectedItem" padding>

@@ -21,11 +21,11 @@ export class AppComponent {
       url: '/settings',
       icon: 'cog'
     },
-    /*{
-      title: 'List',
+    {
+      title: 'Scan',
       url: '/list',
-      icon: 'list'
-    }*/
+      icon: 'Bluetooth'
+    }
   ];
 
   constructor(
