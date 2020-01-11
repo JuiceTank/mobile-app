@@ -17,10 +17,15 @@ export class AppComponent {
       icon: 'home'
     },
     {
+      title: 'Settings',
+      url: '/settings',
+      icon: 'cog'
+    },
+    /*{
       title: 'List',
       url: '/list',
       icon: 'list'
-    }
+    }*/
   ];
 
   constructor(

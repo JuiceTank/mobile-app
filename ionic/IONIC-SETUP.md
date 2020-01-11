@@ -16,35 +16,11 @@
 
 - iOS XCode (ionic setup instructions [here](https://ionicframework.com/docs/installation/ios)). Requires a mac, but don't got one yet
 
-- bootstrap
-    * Install locally to mobile-app/ionic/juicetank `npm install --save bootstrap@3`
-    * Append the following to angular.json section...
-    ```
-    { 
-      "projects": {
-        "app": {
-          "architect": {
-            "build": {
-              "options": {
-                "styles": [
-                    {
-                      "input": "node_modules/bootstrap/dist/css/bootstrap.min.css"
-                    },              
-                    ...
-                ]
-              }
-            }
-          }
-        }
-      }
-    }
-    ``` 
-
 ## RUN LOCALLY
 
-In console, navigate to `/mobile-app/juicetank` and run `ng serve` 
+In console, navigate to `/mobile-app/iconic/juicetank` and run `ng serve` 
 
-Aplication will be available at [http://localhost:8100](http://localhost:8100) 
+Application will be available in your local browser at [http://localhost:8100](http://localhost:8100) 
 
 ## ISSUES
 
@@ -73,3 +49,30 @@ Deploying to USB Connected Android
    - Select and install appropriate API Level (28 in this case, Android 9.0 (Pie)) 
    
 * [adb-devices-unauthorized](https://stackoverflow.com/questions/31638582/android-adb-devices-unauthorized)
+
+## Application Specific Details
+
+- Adding bootstrap styling to application
+    * Install locally to mobile-app/ionic/juicetank `npm install --save bootstrap@3`
+    * Append the following to angular.json section...
+    ```
+    { 
+      "projects": {
+        "app": {
+          "architect": {
+            "build": {
+              "options": {
+                "styles": [
+                    {
+                      "input": "node_modules/bootstrap/dist/css/bootstrap.min.css"
+                    },              
+                    ...
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+    ``` 
+
