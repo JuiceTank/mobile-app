@@ -16,6 +16,36 @@
 
 - iOS XCode (ionic setup instructions [here](https://ionicframework.com/docs/installation/ios)). Requires a mac, but don't got one yet
 
+- bootstrap
+    * Install locally to mobile-app/ionic/juicetank `npm install --save bootstrap@3`
+    * Append the following to angular.json section...
+    ```
+    { 
+      "projects": {
+        "app": {
+          "architect": {
+            "build": {
+              "options": {
+                "styles": [
+                    {
+                      "input": "node_modules/bootstrap/dist/css/bootstrap.min.css"
+                    },              
+                    ...
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+    ``` 
+
+## RUN LOCALLY
+
+In console, navigate to `/mobile-app/juicetank` and run `ng serve` 
+
+Aplication will be available at [http://localhost:8100](http://localhost:8100) 
+
 ## ISSUES
 
 ### Android
